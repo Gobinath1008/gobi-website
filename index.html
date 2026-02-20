@@ -6,10 +6,25 @@
     <title>Gobinath S | Personal Portfolio</title>
     
     
-    
+    <!-- Google Fonts (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS (Animate on Scroll) Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
+
+    <!-- Background Video Container -->
+    <div class="background-video-container">
+        <video autoplay loop muted playsinline>
+            <source src="images/Background_Video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
 
     
     <header>
@@ -41,16 +56,17 @@
                 <div class="hero-text">
                     <h1>Hi, I'm Gobinath S</h1>
                     <h3>MCA Student</h3>
-                    <p>Enthusiastic MCA student with a strong foundation in programming, algorithms, and problem-solving.</p>
+                    <p data-aos="fade-up" data-aos-delay="200">Enthusiastic MCA student with a strong foundation in programming, algorithms, and problem-solving.</p>
+                    <a href="images/Resume.jpeg" download class="btn" data-aos="fade-up" data-aos-delay="400">Download CV</a>
                 </div>
-                <div class="hero-image">
+                <div class="hero-image" data-aos="fade-left">
                     <img src="images/gobi.jpeg" alt="Gobinath S Profile Picture">
                 </div>
             </div>
         </section>
 
         
-        <section id="about" class="about-section content-section">
+        <section id="about" class="about-section content-section" data-aos="fade-up">
             <h2 class="section-title">About Me</h2>
             <div class="about-container">
                 <p>Enthusiastic MCA (Pursuing) student with a strong foundation in programming, algorithms, and problem-solving. Skilled in Java, C, DSA, and MySQL. Eager to apply skills through internships and real-world projects while contributing to innovative software solutions.</p>
@@ -58,41 +74,49 @@
         </section>
 
         
-        <section id="skills" class="skills-section content-section">
+        <section id="skills" class="skills-section content-section" data-aos="fade-up">
             <h2 class="section-title">My Skills</h2>
             <div class="skills-grid">
-                <div class="skill-card">
+                <div class="skill-card" data-aos="zoom-in">
+                    <i class="fa-solid fa-c"></i>
                     <h3>C</h3>
                 </div>
-                <div class="skill-card">
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fa-brands fa-java"></i>
                     <h3>Java</h3>
                 </div>
-                <div class="skill-card">
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fa-solid fa-database"></i>
                     <h3>MySQL</h3>
                 </div>
-                <div class="skill-card">
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fa-brands fa-html5"></i>
                     <h3>HTML</h3>
                 </div>
-                <div class="skill-card">
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="fa-brands fa-css3-alt"></i>
                     <h3>CSS</h3>
                 </div>
-                <div class="skill-card">
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="500">
+                    <i class="fa-solid fa-laptop-code"></i>
                     <h3>Data Structures & Algorithms</h3>
                 </div>
-                <div class="skill-card">
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="600">
+                    <i class="fa-solid fa-keyboard"></i>
                     <h3>Typewriting</h3>
                 </div>
-                <div class="skill-card">
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="700">
+                    <i class="fa-solid fa-file-word"></i>
                     <h3>Microsoft office: Excel, Word, PowerPoint</h3>
                 </div>
             </div>
         </section>
 
     
-        <section id="projects" class="projects-section content-section">
+        <section id="projects" class="projects-section content-section" data-aos="fade-up">
             <h2 class="section-title">Projects</h2>
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card" data-aos="fade-right">
                     <h3>Network Packet Sniffer</h3>
                     <p>A desktop-based network monitoring tool using Java and MySQL. Captures and analyzes real-time network packets.</p>
                     <div class="tech-stack">
@@ -105,7 +129,7 @@
         </section>
 
         
-        <section id="education" class="education-section content-section">
+        <section id="education" class="education-section content-section" data-aos="fade-up">
             <h2 class="section-title">Education</h2>
             <div class="timeline">
                 <div class="timeline-item">
@@ -139,27 +163,49 @@
         </section>
 
         
-        <section id="certifications" class="certifications-section content-section">
+        <section id="certifications" class="certifications-section content-section" data-aos="fade-up">
             <h2 class="section-title">Certifications</h2>
             <div class="cert-grid">
-                <div class="cert-card">
-                    <h4>Learnathon  Successfully Completed 8 Courses</h4>
-                    <p>Aug-Sept 2024</p>
+                <div class="cert-card" data-aos="fade-right">
+                    <h4>HTML5</h4>
+                    <p>Feb 2026</p>
+                    <img src="images/HTML.jpeg" alt="Learnathon Certificate Image">
                 </div>
-                <div class="cert-card">
+                <div class="cert-card" data-aos="fade-left">
+                    <h4>CSS3</h4>
+                    <p>Feb 2026</p>
+                    <img src="images/css.jpeg" alt="Campus Coders League Certificate Image">
+                </div>
+                <div class="cert-card" data-aos="fade-left">
+                    <h4>Java Script</h4>
+                    <p>Feb 2026</p>
+                    <img src="images/javascript.jpeg" alt="Campus Coders League Certificate Image">
+                </div>
+                <div class="cert-card" data-aos="fade-left">
+                    <h4>Frentend Development</h4>
+                    <p>Feb 2026</p>
+                    <img src="images/frontend.jpeg" alt="Campus Coders League Certificate Image">
+                </div>
+                <div class="cert-card" data-aos="fade-left">
+                    <h4>Network and Web Technology</h4>
+                    <p>Feb 2026</p>
+                    <img src="images/Network and web.jpeg" alt="Campus Coders League Certificate Image">
+                </div>
+                <div class="cert-card" data-aos="fade-left">
                     <h4>Campush Coders League Certificate</h4>
                     <p>Participation Certificate</p>
+                    <img src="images/Campus Code League.jpeg" alt="Campus Coders League Certificate Image">
                 </div>
             </div>
         </section>
 
         
-        <section id="contact" class="contact-section content-section">
+        <section id="contact" class="contact-section content-section" data-aos="fade-up">
             <h2 class="section-title">Contact Me</h2>
             <div class="contact-container">
                 <div class="contact-info">
-                    <p>Phone: +91 9790021257</p>
-                    <p>Email: gobinathbsccs@gmail.com</p>
+                    <p>Email: <a href="mailto:gobinathbsccs@gmail.com">gobinathbsccs@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+919790021257">+91 9790021257</a></p>
                     <p>Address: Salem, Tamil Nadu</p>
                 </div>
             </div>
@@ -168,10 +214,23 @@
 
     
     <footer>
-        <p>Copyright © 2026 Gobinath S</p>
+        <div class="social-links">
+            <a href="#" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <p>Copyright © 2026 Gobinath S. All rights reserved.</p>
         <br>
-        <p class="footer-note">Built with by Gobinath S</p>
+        <p class="footer-note">Built with ❤️ by Gobinath S</p>
     </footer>
     <script src="Script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // Animation duration in milliseconds
+        once: true, // Whether animation should happen only once - while scrolling down
+        mirror: false // Ensures animations don't happen in reverse when scrolling past
+      });
+    </script>
 </body>
 </html>
