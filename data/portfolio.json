@@ -1,0 +1,153 @@
+{
+  "hero": {
+    "title": "Hi, I'm Gobinath S",
+    "subtitle": "MCA Student",
+    "desc": "Enthusiastic MCA (Pursuing) student with a strong foundation in programming, algorithms, and problem-solving. Skilled in Java, C, DSA, and MySQL. Eager to apply skills through internships and real-world projects while contributing to innovative software solutions.",
+    "cvLink": "images/Resume.jpg",
+    "imgSrc": "images/gobi.jpeg"
+  },
+  "about": {
+    "text": "Enthusiastic MCA (Pursuing) student with a strong foundation in programming, algorithms, and problem-solving. Skilled in Java, C, DSA, and MySQL. Eager to apply skills through internships and real-world projects while contributing to innovative software solutions."
+  },
+  "skills": {
+    "technical": [
+      { "name": "HTML5", "icon": "fa-brands fa-html5" },
+      { "name": "CSS3", "icon": "fa-brands fa-css3-alt" },
+      { "name": "JavaScript", "icon": "fa-brands fa-js" },
+      { "name": "C Language", "icon": "fa-solid fa-copyright" },
+      { "name": "Java", "icon": "fa-brands fa-java" },
+      { "name": "Python", "icon": "fa-brands fa-python" },
+      { "name": "MySQL", "icon": "fa-solid fa-database" },
+      { "name": "MongoDB", "icon": "fa-solid fa-leaf" },
+      { "name": "Data Structures & Algorithms", "icon": "fa-solid fa-laptop-code" },
+      { "name": "Microsoft Office", "icon": "fa-solid fa-file-word" }
+    ],
+    "soft": [
+      "Problem Solving",
+      "Time Management",
+      "Quick Learner"
+    ],
+    "interests": [
+      "Programming",
+      "Web & App Development"
+    ],
+    "languages": [
+      "<strong>Tamil</strong> - Native",
+      "<strong>English</strong> - Professional"
+    ]
+  },
+  "projects": [
+    {
+      "year": "2026",
+      "org": "Knowledge Institute of Technology, Salem",
+      "title": "Registration Website",
+      "desc": "Developed a web-based registration system for managing participant data for the INEXON'26 symposium.",
+      "tech": ["HTML", "CSS", "JavaScript", "Vercel"],
+      "link": "https://registration-mca.vercel.app/"
+    },
+    {
+      "year": "2026",
+      "org": "Knowledge Institute of Technology, Salem",
+      "title": "Debugging Website",
+      "desc": "Built an interactive Java and C debugging platform for the INEXON'26 symposium technical event. Includes timed challenges and automatic evaluation to test participants' coding skills.",
+      "tech": ["Java", "C Language", "Web Dev", "Vercel"],
+      "link": "https://debugging-java.vercel.app/"
+    },
+    {
+      "year": "2026",
+      "org": "Knowledge Institute of Technology, Salem",
+      "title": "Personal Portfolio Website",
+      "desc": "Developed a personal portfolio website to showcase my projects, technical skills, certifications, and academic achievements. Designed a responsive and user-friendly interface using modern web technologies.",
+      "tech": ["HTML", "CSS", "JavaScript", "Responsive Design", "Vercel"],
+      "link": "https://gobi-website-008.vercel.app/"
+    },
+    {
+      "year": "2026",
+      "org": "Knowledge Institute of Technology, Salem",
+      "title": "Spotify Clone",
+      "desc": "Developed a Spotify-inspired music streaming web application with a modern and responsive user interface. Implemented features such as music playback, playlist management, user authentication, and song search using React.js and Node.js.",
+      "tech": ["React.js", "Node.js", "Express.js", "Web Audio", "Vercel"],
+      "link": "https://spotify-gobi.vercel.app/"
+    },
+    {
+      "year": "2026",
+      "org": "Knowledge Institute of Technology, Salem",
+      "title": "Online Movie Ticket Booking (Frontend)",
+      "desc": "Designed and developed the frontend of a movie ticket booking application. Implemented responsive UI for browsing movies, selecting seats, and simulating booking flow.",
+      "tech": ["HTML", "CSS", "JavaScript", "Responsive UI", "Vercel"],
+      "link": "https://omtb.vercel.app/"
+    },
+    {
+      "year": "2025 - Present",
+      "org": "Knowledge Institute of Technology, Salem",
+      "title": "Booking Management System",
+      "desc": "Developed a web-based Hall Booking Management System with role-based access control, calendar-based booking management, hall availability tracking, booking approvals, and user management. Built using React.js, Node.js, Express.js, and MongoDB.",
+      "tech": ["React.js", "Node.js", "Express.js", "MongoDB", "Vercel"],
+      "link": "https://bs-kiot.vercel.app/"
+    }
+  ],
+  "education": [
+    {
+      "date": "2025 - Present",
+      "degree": "MCA - Pursuing",
+      "school": "Knowledge Institute of Technology, Salem",
+      "grade": "I-sem CGPA: 8.4"
+    },
+    {
+      "date": "2022 - 2025",
+      "degree": "B.Sc - Computer Science",
+      "school": "Mahendra College of Arts and Science, Namakkal",
+      "grade": "CGPA: 6.8"
+    },
+    {
+      "date": "2021 - 2022",
+      "degree": "HSC",
+      "school": "Modern School, Magudanchavadi",
+      "grade": "Percentage: 53.6%"
+    },
+    {
+      "date": "2019 - 2020",
+      "degree": "SSLC",
+      "school": "Modern School, Magudanchavadi",
+      "grade": "Percentage: 56.8%"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Html5",
+      "org": "INFOSYS Course Completion Certificate",
+      "year": "2026",
+      "img": "images/HTML.jpeg"
+    },
+    {
+      "title": "CSS3",
+      "org": "INFOSYS Course Completion Certificate",
+      "year": "2026",
+      "img": "images/css.jpeg"
+    },
+    {
+      "title": "JavaScript",
+      "org": "INFOSYS Course Completion Certificate",
+      "year": "2026",
+      "img": "images/javascript.jpeg"
+    },
+    {
+      "title": "Front End Web Developer",
+      "org": "INFOSYS Course Completion Certificate",
+      "year": "2026",
+      "img": "images/frontend.jpeg"
+    },
+    {
+      "title": "Network and Web Technology",
+      "org": "Course Completion Certificate",
+      "year": "2026",
+      "img": "images/Network and web.jpeg"
+    },
+    {
+      "title": "Campus Coders League",
+      "org": "Participation Certificate",
+      "year": "2026",
+      "img": "images/Campus Code League.jpeg"
+    }
+  ]
+}
