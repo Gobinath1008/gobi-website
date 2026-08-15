@@ -213,17 +213,17 @@ export default function Home() {
   }
 
   // Deconstruct portfolio parts
-  const { hero, about, skills, projects, education, certifications } = portfolioData || {};
+  const { hero, about, skills, projects, education, certifications, internships } = portfolioData || {};
 
   return (
     <div className={isAdmin ? 'admin-mode' : ''}>
       
-      {/* Background Video Container */}
-      <div className="background-video-container">
-        <video autoPlay loop muted playsInline>
-          <source src="/images/Background_Video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+      {/* 3D Animated Background */}
+      <div className="animated-bg-container">
+        <div className="gradient-orb orb-1"></div>
+        <div className="gradient-orb orb-2"></div>
+        <div className="gradient-orb orb-3"></div>
+        <div className="grid-background"></div>
       </div>
 
       {/* Header */}
@@ -238,6 +238,7 @@ export default function Home() {
             <li className="nav-item"><a href="#about" className="nav-link">About</a></li>
             <li className="nav-item"><a href="#skills" className="nav-link">Skills</a></li>
             <li className="nav-item"><a href="#projects" className="nav-link">Projects</a></li>
+            <li className="nav-item"><a href="#internships" className="nav-link">Internship</a></li>
             <li className="nav-item"><a href="#education" className="nav-link">Education</a></li>
             <li className="nav-item"><a href="#certifications" className="nav-link">Certifications</a></li>
             <li className="nav-item"><a href="#contact" className="nav-link">Contact</a></li>
@@ -593,6 +594,84 @@ export default function Home() {
               })}>
                 <i className="fa-solid fa-circle-plus"></i>
                 <span>Add Project</span>
+              </div>
+            )}
+          </div>
+        </section>
+
+        {/* Internships Section */}
+        <section id="internships" className="internships-section content-section" data-aos="fade-up">
+          <h2 className="section-title">Internship Experience</h2>
+          <div className="internships-grid" id="internships-grid-container">
+            {internships?.map((internship, index) => (
+              <div key={index} className="internship-card" data-aos="fade-up" data-aos-delay={index * 100}>
+                <div className="internship-header">
+                  <h3>{internship.position}</h3>
+                  <span className="internship-company">{internship.company}</span>
+                </div>
+                <div className="internship-details">
+                  <p className="internship-location"><i className="fa-solid fa-location-dot"></i> {internship.location}</p>
+                  <p className="internship-duration"><i className="fa-solid fa-calendar"></i> {internship.duration}</p>
+                </div>
+                <p className="internship-desc">{internship.desc}</p>
+                {internship.tech && internship.tech.length > 0 && (
+                  <div className="tech-stack">
+                    {internship.tech.map((t, idx) => <span key={idx}>{t}</span>)}
+                  </div>
+                )}
+                {isAdmin && (
+                  <div className="item-admin-overlay">
+                    <button className="admin-card-btn admin-btn-edit" onClick={() => openEditModal('Edit Internship', [
+                      { name: 'position', label: 'Position Title', type: 'text', value: internship.position },
+                      { name: 'company', label: 'Company/Organization', type: 'text', value: internship.company },
+                      { name: 'location', label: 'Location', type: 'text', value: internship.location },
+                      { name: 'duration', label: 'Duration', type: 'text', value: internship.duration },
+                      { name: 'desc', label: 'Description', type: 'textarea', value: internship.desc },
+                      { name: 'tech', label: 'Technologies (comma separated)', type: 'text', value: internship.tech.join(', ') }
+                    ], (data) => {
+                      const updated = [...internships];
+                      updated[index] = {
+                        position: data.position,
+                        company: data.company,
+                        location: data.location,
+                        duration: data.duration,
+                        desc: data.desc,
+                        tech: data.tech.split(',').map(t => t.trim()).filter(t => t.length > 0)
+                      };
+                      savePortfolioData({ ...portfolioData, internships: updated });
+                    })}><i className="fa-solid fa-pen"></i></button>
+                    <button className="admin-card-btn admin-btn-delete" onClick={() => {
+                      if (confirm("Delete this internship?")) {
+                        const updated = internships.filter((_, i) => i !== index);
+                        savePortfolioData({ ...portfolioData, internships: updated });
+                      }
+                    }}><i className="fa-solid fa-trash"></i></button>
+                  </div>
+                )}
+              </div>
+            ))}
+
+            {isAdmin && (
+              <div className="add-new-card" onClick={() => openEditModal('Add Internship', [
+                { name: 'position', label: 'Position Title', type: 'text', value: '' },
+                { name: 'company', label: 'Company/Organization', type: 'text', value: '' },
+                { name: 'location', label: 'Location', type: 'text', value: '' },
+                { name: 'duration', label: 'Duration', type: 'text', value: '' },
+                { name: 'desc', label: 'Description', type: 'textarea', value: '' },
+                { name: 'tech', label: 'Technologies (comma separated)', type: 'text', value: '' }
+              ], (data) => {
+                const updated = [...(internships || []), {
+                  position: data.position,
+                  company: data.company,
+                  location: data.location,
+                  duration: data.duration,
+                  desc: data.desc,
+                  tech: data.tech.split(',').map(t => t.trim()).filter(t => t.length > 0)
+                }];
+                savePortfolioData({ ...portfolioData, internships: updated });
+              })}>
+                <i className="fa-solid fa-circle-plus"></i>
+                <span>Add Internship</span>
               </div>
             )}
           </div>

@@ -149,5 +149,22 @@
       "year": "2026",
       "img": "images/Campus Code League.jpeg"
     }
-  ]
+  ],
+  "internships": [
+    {
+      "position": "Full Stack Development Intern",
+      "company": "MEE Technologies",
+      "location": "Salem, Tamil Nadu",
+      "duration": "June 15, 2026 - June 30, 2026",
+      "desc": "Built and deployed the ZWF web platform (zwfweb.vercel.app) from the ground up using modern JavaScript frameworks (React.js, Next.js).",
+      "tech": ["React.js", "Next.js", "JavaScript", "Vercel"]
+    }
+  ],
+  "contact": {
+    "phone": "+91 9789002123",
+    "email": "gobinath08@gmail.com",
+    "location": "Magudanchavadi, Salem 637103",
+    "linkedin": "https://www.linkedin.com/in/gobinath008",
+    "github": "https://github.com/Gobinath1008"
+  }
 }
