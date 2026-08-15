@@ -218,18 +218,12 @@ export default function Home() {
   return (
     <div className={isAdmin ? 'admin-mode' : ''}>
       
-      {/* 3D Animated Background */}
-      <div className="animated-bg-container">
-        <div className="gradient-orb orb-1"></div>
-        <div className="gradient-orb orb-2"></div>
-        <div className="gradient-orb orb-3"></div>
-        <div className="grid-background"></div>
-      </div>
-
       {/* Header */}
       <header style={{
         backgroundColor: scrolled ? 'rgba(10, 15, 30, 0.85)' : 'rgba(15, 23, 42, 0.65)',
-        boxShadow: scrolled ? '0 10px 30px rgba(0, 0, 0, 0.3)' : 'none'
+        boxShadow: scrolled ? '0 10px 30px rgba(0, 0, 0, 0.3)' : 'none',
+        position: 'relative',
+        zIndex: 2
       }}>
         <nav className="navbar">
           <a href="#home" className="nav-logo">Gobinath S</a>
@@ -258,7 +252,7 @@ export default function Home() {
         </nav>
       </header>
 
-      <main>
+      <main style={{ position: 'relative', zIndex: 1 }}>
         {/* Hero Section */}
         <section id="home" className="hero-section">
           <div className="hero-content">
